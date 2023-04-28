@@ -1,17 +1,27 @@
 <script setup lang="ts">
-import IconFrijo from '@/components/icons/IconFrijo.vue'
+import AppSidebar from './AppSidebar.vue'
 </script>
 
 <template>
   <div class="layout-base">
-    <IconFrijo />
+    <!-- <IconFrijo class="icon"/> -->
+    <div class="layout"></div>
+    <div class="sidebar">
+      <AppSidebar />
+    </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .layout-base {
   width: 100vw;
-  height: 90vh;
-  /* background-color: blue; */
+  height: 88vh;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 85% 15%;
+
+  .sidebar {
+    position: relative;
+  }
 }
 </style>
