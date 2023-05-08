@@ -7,11 +7,12 @@
   </div>
   <!-- sections names -->
   <div class="section-wraper">
-    <div class="section-page"><span>|</span> asdas</div>
-    <div class="section-page"><span>|</span> asdas</div>
-    <div class="section-page"><span>|</span> asdas</div>
-    <div class="section-page"><span>|</span> asdas</div>
-    <div class="section-page"><span>|</span> asdas</div>
+    <div class="section-page"><span class="text-primary">|</span> asdas</div>
+    <div class="section-page"><span class="text-primary">|</span> asdas</div>
+    <div class="section-page"><span class="text-primary">|</span> asdas</div>
+    <div class="section-page"><span class="text-primary">|</span> asdas</div>
+    <div class="section-page"><span class="text-primary">|</span> asdas</div>
+    <div class="section-page"><span class="text-primary">|</span> asdas</div>
   </div>
 </template>
 
@@ -30,7 +31,6 @@
     span {
       padding-right: 0.5rem;
       width: 1rem;
-      color: red;
     }
   }
 }

@@ -15,17 +15,17 @@ import IconFrijo from '../icons/IconFrijo.vue'
     <!-- elementos principales -->
     <div class="wrap-sections">
       <!-- informacion -->
-      <div class="section">
+      <a href="/" class="section">
         <b>Information</b>
-      </div>
+      </a>
       <!-- trabajo/experiencia -->
-      <div class="section">
+      <a href="/work" class="section">
         <b>Work</b>
-      </div>
+      </a>
       <!-- proyectos -->
-      <div class="section">
+      <a href="/projects" class="section">
         <b>Projects</b>
-      </div>
+      </a>
     </div>
     <!-- iconos de redes -->
     <div class="wrap-icons">
@@ -64,6 +64,10 @@ import IconFrijo from '../icons/IconFrijo.vue'
       justify-self: center;
       text-align: center;
       font-size: large;
+    }
+    a {
+      color: var(--color-text);
+      text-decoration: none;
     }
   }
 
