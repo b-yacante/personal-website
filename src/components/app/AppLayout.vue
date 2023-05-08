@@ -4,15 +4,13 @@ import AppSidebar from './AppSidebar.vue'
 
 <template>
   <div class="layout-base">
-    <!-- <IconFrijo class="icon"/> -->
-    <div class="layout"></div>
     <div class="sidebar">
       <AppSidebar />
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .layout-base {
   width: 100vw;
   height: 88vh;
