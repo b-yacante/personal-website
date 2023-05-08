@@ -15,17 +15,18 @@ import IconFrijo from '../icons/IconFrijo.vue'
     <!-- elementos principales -->
     <div class="wrap-sections">
       <!-- informacion -->
-      <a href="/" class="section">
+      <div href="/" class="section">
         <b>Information</b>
-      </a>
+        <v-icon icon="mdi-chevron-down" color="primary"/>
+      </div>
       <!-- trabajo/experiencia -->
-      <a href="/work" class="section">
+      <div href="/work" class="section">
         <b>Work</b>
-      </a>
+      </div>
       <!-- proyectos -->
-      <a href="/projects" class="section">
+      <div href="/projects" class="section">
         <b>Projects</b>
-      </a>
+      </div>
     </div>
     <!-- iconos de redes -->
     <div class="wrap-icons">

@@ -20,6 +20,7 @@
     "webpack-plugin-vuetify": "^2.0.1"
   },
   "devDependencies": {
+    "@mdi/font": "^7.2.96",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.14.2",
     "@vitejs/plugin-vue": "^4.0.0",
