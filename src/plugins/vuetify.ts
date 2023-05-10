@@ -8,6 +8,8 @@ import 'vuetify/styles'
 
 // Icons
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/styles'
 
 const MainTheme: ThemeDefinition = {
   dark: true,
@@ -24,6 +26,7 @@ const MainTheme: ThemeDefinition = {
 }
 
 export default createVuetify({
+  ssr: true,
   components,
   directives,
   icons: {

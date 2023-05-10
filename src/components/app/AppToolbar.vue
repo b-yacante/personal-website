@@ -15,24 +15,32 @@ import IconFrijo from '../icons/IconFrijo.vue'
     <!-- elementos principales -->
     <div class="wrap-sections">
       <!-- informacion -->
-      <div href="/" class="section">
+      <a href="/" class="section">
         <b>Information</b>
-        <v-icon icon="mdi-chevron-down" color="primary"/>
-      </div>
+        <v-icon icon="mdi-chevron-down" color="primary" />
+      </a>
       <!-- trabajo/experiencia -->
-      <div href="/work" class="section">
+      <a href="/work" class="section">
         <b>Work</b>
-      </div>
+        <v-icon icon="mdi-chevron-down" color="primary" />
+      </a>
       <!-- proyectos -->
-      <div href="/projects" class="section">
+      <a href="/projects" class="section">
         <b>Projects</b>
-      </div>
+        <v-icon icon="mdi-chevron-down" color="primary" />
+      </a>
     </div>
     <!-- iconos de redes -->
     <div class="wrap-icons">
-      <IconGitHub class="icon" />
-      <IconTwitter class="icon" />
-      <IconLinkedin class="icon" />
+        <a class="icon" href="https://github.com/b-yacante" target="_blank">
+          <IconGitHub  />
+        </a>
+        <a class="icon" href="https://twitter.com/Frijosuu" target="_blank">
+          <IconTwitter class="icon" />
+        </a>
+        <a class="icon" href="https://github.com/b-yacante" target="_blank">
+          <IconLinkedin class="icon" />
+        </a>
     </div>
   </div>
 </template>
@@ -46,7 +54,6 @@ import IconFrijo from '../icons/IconFrijo.vue'
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 10% 75% 15%;
-  /* background-color: red; */
 
   .frijo-icon {
     width: 3rem;
@@ -83,6 +90,7 @@ import IconFrijo from '../icons/IconFrijo.vue'
       justify-self: end;
       width: 3rem;
       height: 3rem;
+      color: white;
     }
   }
 }
