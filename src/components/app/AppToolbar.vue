@@ -10,7 +10,7 @@ import IconFrijo from '../icons/IconFrijo.vue'
   <div class="toolbar-base">
     <!-- icono Frijo-->
     <div class="frijo-icon">
-      <IconFrijo />
+      <!-- <IconFrijo /> -->
     </div>
     <!-- elementos principales -->
     <div class="wrap-sections">
