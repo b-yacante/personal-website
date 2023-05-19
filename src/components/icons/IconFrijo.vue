@@ -5,11 +5,13 @@
       <div class="big-circle"></div>
       <div class="big-triangle"></div>
       <div class="curved-box"></div>
-      <!-- <div class="circle">
+      <div class="circle">
         <div class="triangle"></div>
-      </div> -->
+      </div>
     </div>
     <div class="body">
+      <div class="mouth">
+      </div>
       <div class="divisor-line"></div>
     </div>
     <span class="arms-container">
@@ -38,47 +40,52 @@
   align-items: center;
   .hair {
     display: flex;
-    z-index: 5;
+    z-index: 4;
     position: absolute;
     width: 80%;
     height: 40%;
+    top: 0;
+    .big-triangle {
+      position: absolute;
+      bottom: 0;
+      left: -6%;
+      width: 60px;
+      height: 60px;
+      border-top: solid 50px brown;
+      border-left: solid 50px brown;
+      border-bottom-left-radius: 45px;
+      border-bottom-right-radius: 45px;
+      border-top-left-radius: 5rem;
+      border-right: solid 30px brown;
+      transform: rotate(-45deg);
+    }
     .big-circle {
+      position: absolute;
+      top: 3%;
+      right: 10%;
       width: 40%;
-      height: 80%;
+      height: 75%;
       border-radius: 50%;
-      background-color: burlywood;
+      background-color: brown;
     }
     .curved-box {
       position: absolute;
+      top: 8%;
       width: 80%;
-      height: 50%;
-      background-color: red;
+      height: 75%;
+      background-color: brown;
       border-radius: 50% 50% 50px 50px;
-    }
-    .triangle {
-      position: relative;
-      background-color: orange;
-      text-align: left;
-    }
-    .triangle:before,
-    .triangle:after {
-      content: '';
-      position: absolute;
-      background-color: inherit;
-    }
-    .triangle,
-    .triangle:before,
-    .triangle:after {
-      width: 10em;
-      height: 10em;
-      border-top-right-radius: 30%;
+      transform: rotate(-15deg);
     }
     .circle {
       position: absolute;
-      width: 20%;
-      height: 40%;
+      width: 16%;
+      height: 32%;
       border-radius: 50%;
-      background-color: burlywood;
+      background-color: brown;
+      right: 0;
+      bottom: 10%;
+      transform: rotate(-20deg);
       .triangle {
         width: 10%;
         height: 0;
@@ -91,8 +98,8 @@
         top: 70%;
         width: 0;
         height: 0;
-        border-top: 45px solid burlywood;
-        border-right: 45px solid transparent;
+        border-top: 35px solid brown;
+        border-right: 35px solid transparent;
       }
     }
   }
@@ -109,6 +116,21 @@
       background-color: aqua;
       position: absolute;
       left: 50%;
+    }
+
+    .mouth {
+      position: absolute;
+      height: 20%;
+      width: 45%;
+      background-color: white;
+      border-bottom-left-radius: 30%;
+      border-bottom-right-radius: 70%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 20%;
+      z-index: 2;
+      left: 50%;
+      top: 72%;
+      transform: translate(-50%, -50%);
     }
   }
   .arms-container {
@@ -160,11 +182,11 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    top: -10%;
+    top: -5%;
     .glass {
       width: 25%;
       height: 20%;
-      background-color: black;
+      background-color: aqua;
       border-radius: 10px;
     }
     .bridge {
