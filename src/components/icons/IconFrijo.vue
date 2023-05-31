@@ -34,8 +34,8 @@
 .frijo {
   display: flex;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 110px;
+  height: 110px;
   justify-content: center;
   align-items: center;
   .hair {
@@ -49,14 +49,14 @@
       position: absolute;
       bottom: 0;
       left: -6%;
-      width: 60px;
-      height: 60px;
-      border-top: solid 50px brown;
-      border-left: solid 50px brown;
-      border-bottom-left-radius: 45px;
-      border-bottom-right-radius: 45px;
+      width: 10px;
+      height: 10px;
+      border-top: solid 20px #5D4037;
+      border-left: solid 18px #5D4037;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 25px;
       border-top-left-radius: 5rem;
-      border-right: solid 30px brown;
+      border-right: solid 10px #5D4037;
       transform: rotate(-45deg);
     }
     .big-circle {
@@ -66,15 +66,15 @@
       width: 40%;
       height: 75%;
       border-radius: 50%;
-      background-color: brown;
+      background-color: #5D4037;
     }
     .curved-box {
       position: absolute;
       top: 8%;
       width: 80%;
       height: 75%;
-      background-color: brown;
-      border-radius: 50% 50% 50px 50px;
+      background-color: #5D4037;
+      border-radius: 50% 50% 20px 20px;
       transform: rotate(-15deg);
     }
     .circle {
@@ -82,7 +82,7 @@
       width: 16%;
       height: 32%;
       border-radius: 50%;
-      background-color: brown;
+      background-color: #5D4037;
       right: 0;
       bottom: 10%;
       transform: rotate(-20deg);
@@ -98,8 +98,8 @@
         top: 70%;
         width: 0;
         height: 0;
-        border-top: 35px solid brown;
-        border-right: 35px solid transparent;
+        border-top: 12px solid #5D4037;
+        border-right: 12px solid transparent;
       }
     }
   }
@@ -107,13 +107,13 @@
     z-index: 1;
     height: 90%;
     width: 70%;
-    background-color: green;
+    background-color: #57AB4C;
     border-radius: 50% 50%;
     position: relative;
     .divisor-line {
       height: 100%;
       width: 2px;
-      background-color: aqua;
+      background-color: #55924D;
       position: absolute;
       left: 50%;
     }
@@ -142,8 +142,8 @@
       position: absolute;
       height: 40%;
       width: 15%;
-      background-color: blue;
-      border-radius: 2rem 2rem 80% 80%;
+      background-color: #2E7D32;
+      border-radius: 10px 10px 80% 80%;
       top: 38%;
     }
     .right {
@@ -161,8 +161,8 @@
       position: absolute;
       height: 35%;
       width: 17%;
-      background-color: brown;
-      border-radius: 2rem 2rem 80% 80%;
+      background-color: #2E7D32;
+      border-radius: 15px 15px 80% 80%;
       top: 70%;
     }
     .right {
@@ -184,15 +184,15 @@
     align-items: center;
     top: -5%;
     .glass {
-      width: 25%;
-      height: 20%;
-      background-color: aqua;
-      border-radius: 10px;
+      width: 26%;
+      height: 22%;
+      background-color: #B3E5FC;
+      border-radius: 5px;
     }
     .bridge {
       width: 10%;
       height: 5%;
-      background-color: yellow;
+      background-color: #FFAB40;
     }
   }
 }

@@ -7,12 +7,8 @@
   </div>
   <!-- sections names -->
   <div class="section-wraper">
-    <div class="section-page"><span class="text-primary">|</span> asdas</div>
-    <div class="section-page"><span class="text-primary">|</span> asdas</div>
-    <div class="section-page"><span class="text-primary">|</span> asdas</div>
-    <div class="section-page"><span class="text-primary">|</span> asdas</div>
-    <div class="section-page"><span class="text-primary">|</span> asdas</div>
-    <div class="section-page"><span class="text-primary">|</span> asdas</div>
+    <div class="section-page"><span></span> asdas</div>
+    <v-divider></v-divider>
   </div>
 </template>
 
@@ -29,8 +25,12 @@
   font-size: 16px;
   .section-page {
     span {
-      padding-right: 0.5rem;
-      width: 1rem;
+      width: 8px;
+      height: 12px;
+      padding: 0.2rem;
+      margin-right: 10px;
+      border-radius: 5rem;
+      background-color: var(--v-primary-base);
     }
   }
 }

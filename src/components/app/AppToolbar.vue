@@ -7,10 +7,12 @@ import IconFrijo from '../icons/IconFrijo.vue'
 
 <template>
   <!-- toolbar -->
-  <div class="toolbar-base">
+  <div class="toolbar-base mt-2">
     <!-- icono Frijo-->
     <div class="frijo-icon">
-      <!-- <IconFrijo /> -->
+      <div class="icon-container">
+        <IconFrijo class="icon-f" />
+      </div>
     </div>
     <!-- elementos principales -->
     <div class="wrap-sections">
@@ -32,15 +34,15 @@ import IconFrijo from '../icons/IconFrijo.vue'
     </div>
     <!-- iconos de redes -->
     <div class="wrap-icons">
-        <a class="icon" href="https://github.com/b-yacante" target="_blank">
-          <IconGitHub  />
-        </a>
-        <a class="icon" href="https://twitter.com/Frijosuu" target="_blank">
-          <IconTwitter class="icon" />
-        </a>
-        <a class="icon" href="https://github.com/b-yacante" target="_blank">
-          <IconLinkedin class="icon" />
-        </a>
+      <a class="icon" href="https://github.com/b-yacante" target="_blank">
+        <IconGitHub />
+      </a>
+      <a class="icon" href="https://twitter.com/Frijosuu" target="_blank">
+        <IconTwitter class="icon" />
+      </a>
+      <a class="icon" href="https://github.com/b-yacante" target="_blank">
+        <IconLinkedin class="icon" />
+      </a>
     </div>
   </div>
 </template>
@@ -56,10 +58,25 @@ import IconFrijo from '../icons/IconFrijo.vue'
   grid-template-columns: 10% 75% 15%;
 
   .frijo-icon {
-    width: 3rem;
-    height: 3rem;
+    display: flex;
     align-self: center;
     justify-self: center;
+
+    .icon-container {
+      width: 130px;
+      height: 130px;
+      border: solid 5px;
+      border-color: #57AB4C;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon-f {
+        width: 70%;
+        height: 70%;
+      }
+    }
   }
 
   .wrap-sections {
