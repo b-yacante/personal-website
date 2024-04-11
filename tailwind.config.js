@@ -2,12 +2,6 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    backgroundSize: {
-      auto: 'auto',
-      cover: 'cover',
-      contain: 'contain',
-      '100%': '100%'
-    },
     screens: {
       sm: '480px',
       md: '768px',
@@ -15,6 +9,31 @@ export default {
       xl: '1440px'
     },
     colors: {
+      'font-black': '#093248',
+      'font-white': '#fefee8',
+      yellow: {
+        p: '#fdfdbd',
+        200: '#fcf88c',
+        300: '#fbed49',
+        400: '#f7dd18'
+      },
+      'light-blue': {
+        50: '#f0faff',
+        100: '#e0f3fe',
+        p: '#b8e8fc',
+        300: '#7fd8fa',
+        400: '#3bc5f5'
+      },
+      magenta: {
+        50: '#fdf5fe',
+        100: '#faebfc',
+        200: '#f6d6f8',
+        300: '#f1b5f2',
+        p: '#ea8fea',
+        500: '#da5bda',
+        600: '#bd3cba'
+      },
+
       primary: {
         100: '#e6eaf3',
         200: '#d3daea',
@@ -62,8 +81,8 @@ export default {
     },
     extend: {
       spacing: {
-        'spacing-m': '15px',
-        'spacing-d': '30px'
+        'spacing-sm': '15px',
+        'spacing-lg': '30px'
       }
     }
   },
