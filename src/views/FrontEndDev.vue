@@ -49,7 +49,7 @@ import {
       </div>
       <!-- text content -->
       <div class="p-2 grid grid-cols-2 gap-2">
-        <div class="col-span-0">
+        <div class="col-span-0 pb-8">
           <div class="text-red-ribbon-0">Text title</div>
           <p class="text-font-black text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque non magni
@@ -57,7 +57,7 @@ import {
             temporibus impedit dicta quas, voluptatum eius dignissimos expedita.
           </p>
         </div>
-        <div class="col-span-1">
+        <div class="col-span-1 pb-8">
           <div class="text-red-ribbon-0">Text title</div>
           <p class="text-font-black text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque non magni
@@ -80,7 +80,7 @@ import {
         </div>
       </div>
       <div class="relative z-10">
-        <h3 class="text-font-black text-lg font-semibold indent-1">Kw</h3>
+        <h3 class="text-font-black text-lg font-semibold indent-14">Kw</h3>
         <div class="max-h-fit pb-5">
           <p class="indent-14 text-font-black text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eum, provident eos

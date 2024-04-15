@@ -4,9 +4,5 @@ import 'tailwindcss/tailwind.css'
 </script>
 
 <template>
-  <header>
-    <nav></nav>
-  </header>
-
   <RouterView />
 </template>

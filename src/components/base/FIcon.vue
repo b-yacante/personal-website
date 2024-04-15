@@ -11,7 +11,7 @@ const props = withDefaults(defineProps<FIconBase>(), {
   icon: undefined,
   width: 18,
   height: 18,
-  color: '#676666',
+  color: '#093248',
   stroke: '2'
 })
 </script>

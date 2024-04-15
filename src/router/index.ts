@@ -1,13 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AppLayout from '../layouts/AppLayout.vue'
+import FrontEndDev from '@/views/FrontEndDev.vue'
+import PersonalInformation from '@/views/PersonalInformation.vue'
+import GameDev from '@/views/GameDev.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: AppLayout
+      name: 'front',
+      component: FrontEndDev
+    },
+    {
+      path: '/game-dev',
+      name: 'game',
+      component: GameDev
+    },
+    {
+      path: '/personal-information',
+      name: 'info',
+      component: PersonalInformation
     }
   ]
 })

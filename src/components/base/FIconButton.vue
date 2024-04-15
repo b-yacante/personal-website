@@ -9,6 +9,7 @@ export interface FIconButtonProps {
   plain?: boolean
   heigh?: string | number
   width?: string | number
+  stroke?: string | number
 }
 
 const props = withDefaults(defineProps<FIconButtonProps>(), {
@@ -18,7 +19,8 @@ const props = withDefaults(defineProps<FIconButtonProps>(), {
   color: undefined,
   plain: undefined,
   heigh: 24,
-  width: 24
+  width: 24,
+  stroke: 2
 })
 </script>
 
@@ -26,14 +28,17 @@ const props = withDefaults(defineProps<FIconButtonProps>(), {
   <a>
     <div
       class="h-11 w-11 rounded-full flex items-center justify-center ripple"
-      :class="[!props.plain && 'bg-primary-main', props.plain && 'sm:hover:bg-primary-100']"
+      :class="[
+        !props.plain && 'bg-red-ribbon-400 drop-shadow-md',
+        props.plain && 'sm:hover:bg-red-ribbon-300'
+      ]"
     >
       <FIcon
         :height="props.heigh"
         :width="props.width"
         :icon="props.icon"
-        :color="!props.plain ? '#f7f7f8' : '#424769'"
-        :stroke="!props.plain ? 2 : 3"
+        color="#fefee8"
+        :stroke="props.stroke"
       >
       </FIcon>
     </div>

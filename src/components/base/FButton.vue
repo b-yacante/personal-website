@@ -24,9 +24,9 @@ const props = withDefaults(defineProps<FButtonProps>(), {
     :disabled="props.disable"
     class="min-w-max h-10 px-5 rounded text-base ripple flex items-center"
     :class="[
-      props.text && 'text-primary-main font-bold sm:hover:bg-primary-100',
+      props.text && 'text-red-ribbon-400 font-bold sm:hover:bg-red-ribbon-300',
       !props.text &&
-        'text-white bg-primary-main drop-shadow-md hover:bg-primary-800 active:drop-shadow-none',
+        'text-white bg-red-ribbon-400 drop-shadow-md hover:bg-red-ribbon-700 active:drop-shadow-none',
       props.disable && props.text && 'text-gray-300 font-bold',
       props.disable && !props.text && 'text-white bg-gray-300 drop-shadow-md opacity-80'
     ]"
