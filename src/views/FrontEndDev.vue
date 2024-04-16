@@ -1,13 +1,12 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-import Navbar from '../components/Navbar.vue'
-import Footer from '../components/Footer.vue'
 import FButton from '../components/base/FButton.vue'
 import FIcon from '@/components/base/FIcon.vue'
 import FIconButton from '@/components/base/FIconButton.vue'
 import {
   UserIcon,
-  HomeIcon,
+  GameConsoleIcon,
+  CodeIcon,
   GitHubIcon,
   LinkedinIcon,
   MailIcon,
@@ -16,13 +15,21 @@ import {
   ArrowDownRightIcon,
   ArrowDownLeftIcon
 } from '@/data/icons'
+
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function RedirectPage(name: string) {
+  router.push({ name: name })
+}
 </script>
 
 <template>
-  <Navbar class="grid">
+  <nav class="grid relative top-0 w-screen md:h-64 h-40 p-3 sm:p-5 bg-picton-blue-300">
     <div class="flex justify-between">
       <div>
-        <h1 class="w-40 text-3xl font-extrabold text-font-white">Front-end Developer.</h1>
+        <h1 class="w-40 md:w-80 text-3xl font-extrabold text-font-white">Front-end Developer.</h1>
       </div>
       <div class="flex space-x-2 justify-self-end">
         <FIconButton plain :icon="LinkedinIcon"></FIconButton>
@@ -33,7 +40,7 @@ import {
       <h2 class="text-font-white">-Hello, I'm Braian Yacante</h2>
     </div>
     <FIconButton class="absolute -bottom-4 right-6" :icon="MailIcon"></FIconButton>
-  </Navbar>
+  </nav>
   <!-- body content -->
   <div class="p-5">
     <div class="flex items-center">
@@ -99,5 +106,20 @@ import {
       </div>
     </div>
   </div>
-  <Footer></Footer>
+  <footer class="w-screen mt-5 relative bottom-0 bg-red-ribbon-400 p-2 z-50">
+    <div class="grid">
+      <div @click="RedirectPage('game')" class="flex items-center ripple pr-4 max-w-fit">
+        <FIconButton plain heigh="26" width="26" :icon="GameConsoleIcon"></FIconButton>
+        <label class="text-font-white">Game Developer</label>
+      </div>
+      <div @click="RedirectPage('front')" class="flex items-center ripple pr-4 max-w-fit">
+        <FIconButton plain heigh="24" width="24" :icon="CodeIcon"></FIconButton>
+        <label class="text-font-white">Front-end Developer</label>
+      </div>
+      <div @click="RedirectPage('info')" class="flex items-center ripple pr-4 max-w-fit">
+        <FIconButton plain heigh="24" width="24" :icon="UserIcon"></FIconButton>
+        <label class="text-font-white">Personal Information.</label>
+      </div>
+    </div>
+  </footer>
 </template>

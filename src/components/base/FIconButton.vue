@@ -37,7 +37,7 @@ const props = withDefaults(defineProps<FIconButtonProps>(), {
         :height="props.heigh"
         :width="props.width"
         :icon="props.icon"
-        color="#fefee8"
+        :color="props.color ? props.color : '#fefee8'"
         :stroke="props.stroke"
       >
       </FIcon>

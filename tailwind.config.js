@@ -4,9 +4,9 @@ export default {
   theme: {
     screens: {
       sm: '480px',
-      md: '600px',
+      md: '660px',
       lg: '976px',
-      xl: '1440px'
+      xl: '1100px'
     },
     colors: {
       'font-black': '#0c4c6e',

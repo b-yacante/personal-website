@@ -30,3 +30,5 @@ export const GameConsoleIcon =
   'M2 8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4 4h4m-2-2v4m7-3v.01M18 13v.01'
 
 export const CodeIcon = 'M16 18L22 12L16 6 M8 6L2 12L8 18'
+
+export const ChevronLeftIcon = 'M15 18L9 12L15 6'
