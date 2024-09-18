@@ -8,7 +8,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Braian Yacante',
   description: 'Porfolio',
 }
 
