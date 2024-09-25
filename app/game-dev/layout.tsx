@@ -40,7 +40,7 @@ export default function GameLayout({
           <Link href="">
             <i className="nes-icon github is-medium"></i>
           </Link>
-          <Link href="">
+          <Link href="mailto:braian.yac@gmail.com">
             <i className="nes-icon gmail is-medium"></i>
           </Link>
         </div>

@@ -6,7 +6,7 @@ export default function GameDev() {
     <div className="grid place-items-center">
       <div className="my-6 flex w-full justify-center">
         <img
-          className="nes-avatar is-large"
+          className="nes-avatar is-large max-h-80 max-w-80"
           alt="Avatar"
           src={avatar.src}
           style={{
@@ -25,10 +25,15 @@ export default function GameDev() {
           </p>
           <div className="lists px-6">
             <ul className="nes-list is-circle">
-              <li>Good morning.</li>
-              <li>Thou hast had a good night's sleep, I hope.</li>
-              <li>Thou hast had a good afternoon</li>
-              <li>Good night.</li>
+              <li>21/12/1998 - lvl 25.</li>
+              <li>
+                Phone: <a href="tel:+54 2644642600">+54 2644642600.</a>
+              </li>
+              <li>
+                Mail:{' '}
+                <a href="mailto:braian.yac@gmail.com">braian.yac@gmail.com.</a>{' '}
+              </li>
+              <li>Address: San Juan, Argentina.</li>
             </ul>
           </div>
         </div>
