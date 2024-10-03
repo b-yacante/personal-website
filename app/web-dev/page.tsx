@@ -5,15 +5,15 @@ import SkillsWebPage from '@/components/web-dev/skills-page'
 export default function WebDevPage() {
   return (
     <div className="grid place-items-center">
-      <div id="about">
+      <section id="about">
         <PresentationWebPage />
-      </div>
-      <div id="experience">
+      </section>
+      <section id="experience">
         <ExperienceWebPage />
-      </div>
-      <div id="skills">
+      </section>
+      <section id="skills">
         <SkillsWebPage />
-      </div>
+      </section>
     </div>
   )
 }

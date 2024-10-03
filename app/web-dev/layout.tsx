@@ -8,7 +8,7 @@ export default function WebLayout({
   return (
     <html>
       <HeaderWebBar />
-      <main className="bg-gray-800 px-6 py-4 text-white sm:px-28 md:px-32 md:py-12 lg:px-64 lg:text-base xl:px-80 2xl:px-96">
+      <main className="bg-gray-900 px-2 py-4 text-white sm:px-32 md:px-32 md:py-12 lg:px-64 lg:text-base xl:px-72 2xl:px-96">
         {children}
       </main>
     </html>

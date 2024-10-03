@@ -1,31 +1,28 @@
-import { FaVuejs } from 'react-icons/fa'
+import { FaVuejs, FaHtml5 } from 'react-icons/fa'
 import { IoLogoCapacitor } from 'react-icons/io5'
-import { SiTypescript } from 'react-icons/si'
-import { SiVuetify } from 'react-icons/si'
-import { FaHtml5 } from 'react-icons/fa'
-import { SiCss3 } from 'react-icons/si'
-import { SiSass } from 'react-icons/si'
+import { SiTypescript, SiVuetify, SiSass, SiCss3 } from 'react-icons/si'
 import { MdArrowOutward } from 'react-icons/md'
+import Link from 'next/link'
 
 export default function ExperienceWebPage() {
   return (
-    <div className="grid min-h-screen place-items-center">
+    <div className="grid min-h-screen place-items-center px-3">
       <div>
-        <h1 className="text-3xl font-extrabold">Work Experience</h1>
+        <h1 className="text-3xl md:text-4xl font-extrabold">Work Experience</h1>
       </div>
       {/* argfit */}
-      <div className="w-full">
-        <div className="flex items-center underline">
+      <div className="w-full rounded-3xl bg-gradient-to-br from-sky-950 px-4 md:px-6 md:py-2">
+        <div className="flex items-center underline decoration-slate-400">
           <h2 className="my-3 text-xl">
-            <a
+            <Link
               href="https://www.argfit.net/"
               target="_blank"
               className="font-bold"
             >
               Argfit
-            </a>
+            </Link>
           </h2>
-          <MdArrowOutward />
+          <MdArrowOutward className="text-slate-400" />
         </div>
         <div className="my-2 space-y-3">
           <b className="text-xl">
@@ -36,7 +33,7 @@ export default function ExperienceWebPage() {
             -Created in a hybrid application built with Vue 2, TypeScript, and
             CapacitorJS.
           </p>
-          <p className="text-sm text-slate-400">(Duration: 3 months).</p>
+          <p className="text-sm text-slate-400">(Duration: 4 months).</p>
         </div>
         <div className="flex w-full justify-end space-x-1 py-2">
           <FaVuejs size={40} color="#42b883" />
@@ -48,18 +45,18 @@ export default function ExperienceWebPage() {
         </div>
       </div>
       {/* irent */}
-      <div>
-        <div className="flex items-center underline">
+      <div className="w-full rounded-3xl bg-gradient-to-br from-sky-950 px-4 md:px-6 md:py-2">
+        <div className="flex items-center underline decoration-slate-400">
           <h2 className="my-3 text-xl">
-            <a
+            <Link
               href="https://www.i-rent.net/"
               target="_blank"
               className="font-bold"
             >
               I-Rent.Net
-            </a>
+            </Link>
           </h2>
-          <MdArrowOutward />
+          <MdArrowOutward className="text-slate-400" />
         </div>
         <div className="my-2 space-y-3">
           <b className="text-xl">
