@@ -170,7 +170,7 @@ export default function SkillsWebPage() {
               </div>
               <div className="flex items-center space-x-1">
                 <SiAdobephotoshop
-                  color="#40D0FB"
+                  color="#31A8FF"
                   className="text-3xl lg:text-[40px]"
                 />
                 <p className="text-sm text-slate-400 lg:text-base">Photoshop</p>
