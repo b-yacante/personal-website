@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function ExperienceWebPage() {
   return (
-    <div className="grid min-h-screen place-items-center px-3">
+    <div className="grid gap-y-6 min-h-screen place-items-center px-3">
       <div>
         <h1 className="text-3xl md:text-4xl font-extrabold">Work Experience</h1>
       </div>
