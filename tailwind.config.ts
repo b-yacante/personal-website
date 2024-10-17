@@ -9,13 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#CDDEFF',
-        foreground: 'var(--foreground)',
         'game-text': '#2B3467',
-        'game-primary': '#EB455F',
-        'game-secondary': '#676FA3',
-        'game-light': '#FCFFE7',
-        'game-dark': '#BAD7E9',
+        'game-bg': '#EEEDED',
+        'game-red': '#F95454',
+        'game-darkred': '#C62E2E',
+        'game-blue': '#0D92F4',
+        'game-lightblue': '#77CDFF',
       },
     },
   },
