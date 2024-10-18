@@ -8,7 +8,7 @@ type Dialogs = 'experience' | 'contact' | 'skills'
 
 export default function PresentationGamePage() {
   const [arrayStrings, setArrayStrings] = useState([
-    'Hello, my name is Braian Yacante, soy desarrollador de videojuegos independiente',
+    'Hello, my name is Braian Yacante, soy desarrollador de videojuegos independiente, me destaco mayormente programando en C# en Unity y en GDScript en Godot.',
   ])
 
   function changeString(dialog: Dialogs) {
@@ -29,8 +29,8 @@ export default function PresentationGamePage() {
   }
 
   return (
-    <div className="grid min-h-screen grow-0 place-items-center p-4 sm:px-32 md:px-32 md:py-12 lg:px-64 lg:text-base xl:px-72 2xl:px-96">
-      <section className="nes-container min-w-full">
+    <div className="grid min-h-screen w-full place-items-center p-4">
+      <section className="nes-container">
         <section className="message-list">
           <section className="message -left flex">
             {/* image */}
@@ -61,6 +61,14 @@ export default function PresentationGamePage() {
         </section>
       </section>
 
+      <div className="w-full">
+        <progress
+          className="nes-progress is-primary"
+          value="80"
+          max="100"
+        ></progress>
+      </div>
+
       <button
         onClick={() => changeString('experience')}
         className="rounded-lg bg-slate-200 p-4"
@@ -79,14 +87,6 @@ export default function PresentationGamePage() {
       >
         contact
       </button>
-
-      <div className="w-full">
-        <progress
-          className="nes-progress is-primary"
-          value="80"
-          max="100"
-        ></progress>
-      </div>
     </div>
   )
 }
